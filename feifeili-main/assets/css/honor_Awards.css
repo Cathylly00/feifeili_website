@@ -1,0 +1,67 @@
+.honor-kv-text{
+    position: absolute;
+    top: 35%;
+    right: 60%;
+}
+.honor-kv-title{
+    text-align: center;
+    font-size: 10rem;
+}
+.honor-kv-subtitle{
+    font-size: 5rem;
+}
+@media (max-width: 992px) {
+    .honor-kv-text{
+        left: 15%;
+    }
+}
+@media (max-width: 576px) {
+    .honor-kv-text {
+    left: 30px; } 
+    .honor-kv-title{
+        font-size: 5rem;
+    }
+    .honor-kv-subtitle{
+        font-size: 1rem;
+    }
+}
+
+.awards-list {
+    width: 1280px;
+}
+
+.awards-box {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.awards-content {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.awards-year {
+    margin-top: 20px;
+}
+
+.awards-name {
+    margin-top: 10px;
+    height: 100px;
+}
+
+.awards-organizer {
+    font-weight: 100;
+}
+
+.page-link {
+    border: 0px ;
+    background-color: #07223F;
+    color: #8BECFF;
+    letter-spacing: 1.5rem;
+}
+
+.page-link.active{
+    background-color: #07223F;
+    color: #8BECFF;
+}

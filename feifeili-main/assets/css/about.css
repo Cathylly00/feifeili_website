@@ -1,0 +1,113 @@
+.timeLine {
+    position: relative;
+    &::after {
+        content:""; 
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        height: 85%;
+        width: 1px;
+        margin-top: 5px;
+        background-color: #8BECFF;
+    }
+}
+
+.timeLine-pointer {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        margin-top: 5px;
+        border-radius: 50%;
+        border:1px solid #8BECFF;
+        transform: translateX(-50%);
+        background-color: #07223F;
+        z-index: 1;
+    }}  
+
+.timeLine-pointer-career {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 25%;
+        bottom: 0;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        margin-top: 5px;
+        border-radius: 50%;
+        border:1px solid #8BECFF;
+        transform: translateX(-50%);
+        background-color: #07223F;
+        z-index: 1;
+    } 
+}  
+@media (max-width: 576px) {
+    .timeLine::after {
+        left: 20px;
+        height: 82%;
+    }
+    .timeLine-pointer::after {
+        left: 32px;
+    }
+    .timeLine-pointer-career::after {
+        top: 0%;
+        left: 32px;
+    }
+}
+
+.about-title-text {
+    position: absolute;
+    left: 150px;
+}
+
+.tab-box{
+    border: solid 1px #8BECFF;
+    border-radius: 99px;
+    background-color: #07223F;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 500;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    color: #8BECFF;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}@media (max-width: 576px) {
+    .tab-box{
+        width: 40%;
+        height: 40%;
+        font-size: 55%;
+    }
+    }
+    
+
+.contact-box{
+    position: relative;
+    border: solid 1px #8BECFF;
+    background-color: #07223F;
+    padding: 30px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.contact-box hr{
+    width: 6%;
+    border: 1px solid #8BECFF;
+    opacity: 100%;
+}
+
+.contact-text{
+    font-weight: 300;
+}

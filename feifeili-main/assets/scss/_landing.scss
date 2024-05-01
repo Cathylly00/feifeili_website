@@ -1,0 +1,102 @@
+.kv {
+    position: relative;
+    .container-fluid {
+        --bs-gutter-x: 0rem;
+    }
+    .row {
+        --bs-gutter-x: 0rem;
+    }
+    &-text {
+        position: absolute;
+        bottom: 150px;
+        left: 150px;
+        @include media-breakpoint-down(sm) {
+            bottom: 30px;
+            left: 30px;
+        }
+    }
+    h1 {
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+    h5 {
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0;
+    }
+    .line {
+        width: 40px;
+        display: inline-block;
+        margin-left: 15px;
+    }
+    .flex {
+        justify-content: left;
+    }
+}
+
+
+
+.about {
+    &-text {
+        padding-left: 30px; 
+        @include media-breakpoint-down(sm) {
+            padding-left: 12px; 
+            padding-top: 20px;
+        }
+    }
+    p {
+        padding: 10px 0;    
+    }
+}
+
+
+.landing-awards-listing {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    @include media-breakpoint-down(sm) {
+        width: 100vw;
+        overflow: auto;
+    }
+    &-item {
+        padding: 0 20px;
+        min-width: 200px;
+        img {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+.landing-research {
+    position: relative;
+    text-align: center;
+    @include media-breakpoint-down(sm) {
+        padding-top: 20px;
+    }
+    p {
+        padding: 15px 0;
+    }
+    &-text {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 60px 80px;
+    }
+}
+
+.landing-news {
+    &-Lcol {
+        padding-left: 30px;
+        @include media-breakpoint-down(sm) {
+            padding-left: 12px; 
+        }
+    }
+    &-item {
+        padding: 35px 0 30px 0;
+        h5 {
+            padding-top: 10px;
+        }
+    }
+}

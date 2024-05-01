@@ -1,0 +1,151 @@
+.header-box{
+    padding: 100px;
+}
+
+.timeLine {
+    position: relative;
+    &::after {
+        content:""; 
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50px;
+        height: 100%;
+        width: 1px;
+        margin-top: 5px;
+        background-color: #8BECFF;
+    }
+}
+
+.timeline_area {
+    position: relative;
+    z-index: 1;
+}
+.single-timeline-area {
+    z-index: 1;
+}
+@media only screen and (max-width: 575px) {
+    .single-timeline-area {
+        padding-left: 100px;
+    }
+}
+.single-timeline-area .timeline-year {
+    position: relative;
+    width: 90px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-left: 60px;
+    margin-bottom: 0px;
+}
+@media only screen and (max-width: 575px) {
+    .single-timeline-area .timeline-year {
+        width: 100px;
+    }
+}
+
+/* Timeline Pointer*/
+.single-timeline-area .timeline-year::before {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border:1px solid #8BECFF;
+    background-color: #07223F;
+    content: "";
+    top: 50%;
+    left: 30px;
+    z-index: 5;
+    margin-top: -5.5px;
+}
+.single-timeline-area .timeline-date p {
+    margin-bottom: 0;
+    color: #07223F;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.single-timeline-area .single-timeline-content {
+    /**/
+}
+@media only screen and (max-width: 575px) {
+    .single-timeline-area .single-timeline-content {
+        padding: 20px;
+    }
+}
+
+.project-col {
+
+    position: relative;
+    width: 370px;
+    height: 400px;
+    z-index: 1;
+    padding: 30px 30px 25px;
+    margin-top: 15px;
+    border: 1px solid #8BECFF;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+@media  (max-width: 576px) {
+    .project-col {
+        
+    }
+}
+.input-group {
+    --bs-border-color: #8BECFF;
+}
+
+.search-input {
+    background-color: transparent;
+    border: 0px;
+}
+
+.search-input::placeholder { 
+    color: #8BECFF;
+}
+
+.form-control:valid {
+    border-radius: 20%;
+    background-color:  #07223F !important;
+}
+
+.search-btn {
+    color: #8BECFF;
+}
+
+.project-title {
+    width: 310px;
+    height: 84px;
+    font-size: larger;
+}
+
+.project-publisher {
+    width: 310px;
+    height: 115px;
+    font-size: medium;
+}
+
+.project-author {
+    width: 310px;
+    font-size: small;
+}
+
+.project-DOI {
+    width: 310px;
+    font-size: small;
+}
+
+.project-data::-webkit-scrollbar {
+    background-color: transparent;
+}
