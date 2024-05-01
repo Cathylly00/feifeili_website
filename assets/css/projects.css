@@ -1,7 +1,3 @@
-.header-box{
-    padding: 100px;
-}
-
 .timeLine {
     position: relative;
     &::after {

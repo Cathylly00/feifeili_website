@@ -53,15 +53,3 @@
 .awards-organizer {
     font-weight: 100;
 }
-
-.page-link {
-    border: 0px ;
-    background-color: #07223F;
-    color: #8BECFF;
-    letter-spacing: 1.5rem;
-}
-
-.page-link.active{
-    background-color: #07223F;
-    color: #8BECFF;
-}

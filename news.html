@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0' />
-        <title>Honor & Awards</title>
+        <title>News</title>
         <!-- favicon -->
         <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
@@ -21,7 +21,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css" >
         <link rel="stylesheet" type="text/css" href="assets/css/aos.css" >
         <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-        <link rel="stylesheet" type="text/css" href="assets/css/honor_Awards.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/news.css" />
     </head>
 
     <body>
@@ -29,25 +29,49 @@
 
         <!-- Header -->
         <div class="header">
-            <div id="container-fluid">
-                <div class="no-padding flex">
-                    <div class="col-2 logo">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                <div class="full-width d-flex justify-content-between">
+                    <div class="logo d-inline-block">
                         <a href="index.html"><img class="" src="assets/images/feifeili-logo.svg" alt=""></a>
                     </div>
-                    <div class="col-8 d-none d-lg-block nav text-center">
-                        <a href="index.html" class="nav-item">Home</a>
-                        <a href="about.html" class="nav-item">About</a>
-                        <a href="honor&Awards.html" class="nav-item nav-item-active">honors & awards</a>
-                        <a href="projects.html" class="nav-item">Projects</a>
-                        <a href="news.html" class="nav-item">News</a>
-                    </div> 
-                    <div class="col-2 social-icon">
+
+                    <div class="col-sm-0 d-block d-sm-none text-end flex">
                         <a href="https://www.linkedin.com/in/fei-fei-li-4541247" target="_blank"><img class="" src="assets/images/logo-linkedin.svg" alt=""></a>
                         <a href="https://twitter.com/drfeifei" target="_blank"><img class="" src="assets/images/logo-x.svg" alt=""></a>
                     </div>
-            
-                </div>
+
+                    <div class="nav-box justify-content--sm-center flex d-inline-block">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div class="collapse navbar-collapse flex" id="navbarSupportedContent">
+                            <ul class="navbar-nav justify-content-center ms-3 me-3 mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="honor&Awards.html">Honors & Awards</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="projects.html">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="news.html">News</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="d-none d-sm-inline-block">
+                        <a href="https://www.linkedin.com/in/fei-fei-li-4541247" target="_blank"><img class="" src="assets/images/logo-linkedin.svg" alt=""></a>
+                        <a href="https://twitter.com/drfeifei" target="_blank"><img class="" src="assets/images/logo-x.svg" alt=""></a>
+                    </div>
             </div>
+            </nav>
         </div>
         <!-- Header End -->
 
@@ -58,20 +82,23 @@
         </div>
         <!-- AI Fei-Fei -->
 
-
         <!-- KV -->
         <div class="kv">
-            <div class="container-fluid">
+            <div class="container section-padding">
                 <div class="row">
+                    <col class="col-12">
+                    <h1>News</h1>
+                    </div>
+                <div class="row flex">
                     <div class="col-12 col-sm-6">
-                        <div class="honor-kv-text ps-lg-3">
-                            <h1 class="honor-kv-title mb-1">100</h1>
-                            <h1 class="mt-1">Honors & Awards</h1>
+                        <div class="news-kv-text-box">
+                            <p class="news-kv-text-date mb-4">Mar 19, 2024</p>
+                            <p class="fw-bold">‘There’s nothing artificial about artificial intelligence’: Fei-Fei Li on ’28 Pre-Read</p>
                         </div>
                     </div>
                     <div class="col-0 col-sm-6">
-                        <img class="full-width d-none d-sm-block" src="assets/images/landing-kv-square.png" alt="">
-                        <img class="full-width d-block d-sm-none align-items-end" src="assets/images/landing-research.png" alt="">
+                        <img class="full-width d-none d-sm-block" src="assets/images/landing-news001.png" alt="">
+                        <img class="full-width d-block d-sm-none align-items-end" src="assets/images/landing-news001.png" alt="">
                     </div>
                 </div>
             </div>
@@ -80,13 +107,27 @@
 
         <!-- Award -->
         <div class="container section-padding">
-            <!-- Dropdown -->
+            <!-- Dropdown Tag -->
             <div class="row flex">
-                <div class="col-1 col-sm-1">
-                    <div class="box"></div>
+                <div class="col-sm-5"><div class="box"></div></div>
+                <div class="col-sm-3">
+                    <div class="dropdown">
+                        <button class="btn award-dropdown-menu-btn d-flex justify-content-between" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="">Tags</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item active" href="#">#1</a></li>
+                            <li><a class="dropdown-item" href="#">#2</a></li>
+                            <li><a class="dropdown-item" href="#">#3</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-10 col-sm-11">
-                    <div class="dropdown d-flex justify-content-sm-end">
+            <!-- Dropdown Tag END -->
+
+            <!-- Dropdown Sort -->
+                <div class="col-sm-3">
+                    <div class="dropdown">
                         <button class="btn award-dropdown-menu-btn d-flex justify-content-between" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="">Sort by: Newest</span>
                             <i class="bi bi-chevron-down"></i>
@@ -98,162 +139,99 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-1 col-sm-1">
+                <div class="col-sm-1">
                     <div class="box"></div>
                 </div>
             </div>
-            <!-- Dropdown END -->
+            <!-- Dropdown Sort END -->
 
-            <!-- Awards List-->
-            <div class="row awards-list section-padding-60T ps-4 ps-sm-3">
-                <!-- Awards Row 01-->
-                <div class="col-3 awards-box">
-                    <img class="w-50" src="assets/images/awards-logo001.png" alt="">
-                    <div class="">
-                        <div class="awards-year"><b>2024</b></div>
-                        <div class="awards-name"><b>2024 Woodrow Wilson Award</b></div>
-                        <div class="awards-organizer">Princeton University</div>
+            <!-- News List-->
+            <div class="row news-list section-padding-60T justify-content-between">
+                <!-- News Row 01-->
+                <div class="row">
+                    <div class="col-4 card news-box">
+                        <img class="news-picture" src="assets/images/landing-news001.png" alt="">
+                        <div class="">
+                            <div class="news-date"><p>Feb 23, 2024</p></div>
+                            <div class="news-text"><p>‘The Worlds I See’ by AI visionary Fei-Fei Li ’99 selected as Princeton Pre-read</p></div>
+                        </div>
+                    </div>
+                    <div class="col-4 card news-box">
+                        <img class="news-picture" src="assets/images/landing-news001.png" alt="">
+                        <div class="">
+                            <div class="news-date"><p>Mar 28, 2023</p></div>
+                            <div class="news-text"><p>AI expert Prof. Fei Fei Li comes to Taiwan to share her observation about the future of AI</p></div>
+                        </div>
+                    </div>
+                    <div class="col-4 card news-box">
+                        <img class="news-picture" src="assets/images/landing-news001.png" alt="">
+                        <div class="">
+                            <div class="news-date"><p>Nov 8, 2023</p></div>
+                            <div class="news-text"><p>"Godmother of A.I." Fei-Fei Li on technology development: "The power lies within people"</p></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-3 awards-box">
-                    <img class="w-50" src="assets/images/awards-logo001.png" alt="">
-                    <div class="">
-                        <div class="awards-year"><b>2023</b></div>
-                        <div class="awards-name"><b>2023 Time AI100</b></div>
-                        <div class="awards-organizer">Time</div>
-                    </div>
-                </div>
-                <div class="col-3 awards-box">
-                    <img class="w-50" src="assets/images/awards-logo001.png" alt="">
-                    <div class="">
-                        <div class="awards-year"><b>2023</b></div>
-                        <div class="awards-name"><b>Intel Lifetime Achievements Innovation...</b></div>
-                        <div class="awards-organizer">Intel</div>
-                    </div>
-                </div>
-                <div class="col-3 awards-box">
-                    <img class="w-50" src="assets/images/awards-logo001.png" alt="">
-                    <div class="">
-                        <div class="awards-year"><b>2022</b></div>
-                        <div class="awards-name"><b>Thomas S. Huang Memorial Prize</b></div>
-                        <div class="awards-organizer">IEEE PAMI</div>
-                    </div>
-                </div>
-                <!-- Awards Row 01 END-->
+                <!-- News Row 01 END-->
 
-                <!-- Awards Row 02-->
-                <div class="col-3 awards-box">
-                    <img class="w-50" src="assets/images/awards-logo001.png" alt="">
-                    <div class="">
-                        <div class="awards-year"><b>2024</b></div>
-                        <div class="awards-name"><b>2024 Woodrow Wilson Award</b></div>
-                        <div class="awards-organizer">Princeton University</div>
+                <!-- News Row 02-->
+                <div class="row">
+                    <div class="col-4 card news-box">
+                        <img class="news-picture" src="assets/images/landing-news001.png" alt="">
+                        <div class="">
+                            <div class="news-date"><p>Feb 23, 2024</p></div>
+                            <div class="news-text"><p>‘The Worlds I See’ by AI visionary Fei-Fei Li ’99 selected as Princeton Pre-read</p></div>
+                        </div>
+                    </div>
+                    <div class="col-4 card news-box">
+                        <img class="news-picture" src="assets/images/landing-news001.png" alt="">
+                        <div class="">
+                            <div class="news-date"><p>Mar 28, 2023</p></div>
+                            <div class="news-text"><p>AI expert Prof. Fei Fei Li comes to Taiwan to share her observation about the future of AI</p></div>
+                        </div>
+                    </div>
+                    <div class="col-4 card news-box">
+                        <img class="news-picture" src="assets/images/landing-news001.png" alt="">
+                        <div class="">
+                            <div class="news-date"><p>Nov 8, 2023</p></div>
+                            <div class="news-text"><p>"Godmother of A.I." Fei-Fei Li on technology development: "The power lies within people"</p></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-3 awards-box">
-                    <img class="w-50" src="assets/images/awards-logo001.png" alt="">
-                    <div class="">
-                        <div class="awards-year"><b>2023</b></div>
-                        <div class="awards-name"><b>2023 Time AI100</b></div>
-                        <div class="awards-organizer">Time</div>
-                    </div>
-                </div>
-                <div class="col-3 awards-box">
-                    <img class="w-50" src="assets/images/awards-logo001.png" alt="">
-                    <div class="">
-                        <div class="awards-year"><b>2023</b></div>
-                        <div class="awards-name"><b>Intel Lifetime Achievements Innovation...</b></div>
-                        <div class="awards-organizer">Intel</div>
-                    </div>
-                </div>
-                <div class="col-3 awards-box">
-                    <img class="w-50" src="assets/images/awards-logo001.png" alt="">
-                    <div class="">
-                        <div class="awards-year"><b>2022</b></div>
-                        <div class="awards-name"><b>Thomas S. Huang Memorial Prize</b></div>
-                        <div class="awards-organizer">IEEE PAMI</div>
-                    </div>
-                </div>
-                <!-- Awards Row 02 END-->
+                <!-- News Row 02 END-->
 
-                <!-- Awards Row 03-->
-                <div class="col-3 awards-box">
-                    <img class="w-50" src="assets/images/awards-logo001.png" alt="">
-                    <div class="">
-                        <div class="awards-year"><b>2024</b></div>
-                        <div class="awards-name"><b>2024 Woodrow Wilson Award</b></div>
-                        <div class="awards-organizer">Princeton University</div>
+                <!-- News Row 03-->
+                <div class="row">
+                    <div class="col-4 card news-box">
+                        <img class="news-picture" src="assets/images/landing-news001.png" alt="">
+                        <div class="">
+                            <div class="news-date"><p>Feb 23, 2024</p></div>
+                            <div class="news-text"><p>‘The Worlds I See’ by AI visionary Fei-Fei Li ’99 selected as Princeton Pre-read</p></div>
+                        </div>
+                    </div>
+                    <div class="col-4 card news-box">
+                        <img class="news-picture" src="assets/images/landing-news001.png" alt="">
+                        <div class="">
+                            <div class="news-date"><p>Mar 28, 2023</p></div>
+                            <div class="news-text"><p>AI expert Prof. Fei Fei Li comes to Taiwan to share her observation about the future of AI</p></div>
+                        </div>
+                    </div>
+                    <div class="col-4 card news-box">
+                        <img class="news-picture" src="assets/images/landing-news001.png" alt="">
+                        <div class="">
+                            <div class="news-date"><p>Nov 8, 2023</p></div>
+                            <div class="news-text"><p>"Godmother of A.I." Fei-Fei Li on technology development: "The power lies within people"</p></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-3 awards-box">
-                    <img class="w-50" src="assets/images/awards-logo001.png" alt="">
-                    <div class="">
-                        <div class="awards-year"><b>2023</b></div>
-                        <div class="awards-name"><b>2023 Time AI100</b></div>
-                        <div class="awards-organizer">Time</div>
-                    </div>
-                </div>
-                <div class="col-3 awards-box">
-                    <img class="w-50" src="assets/images/awards-logo001.png" alt="">
-                    <div class="">
-                        <div class="awards-year"><b>2023</b></div>
-                        <div class="awards-name"><b>Intel Lifetime Achievements Innovation...</b></div>
-                        <div class="awards-organizer">Intel</div>
-                    </div>
-                </div>
-                <div class="col-3 awards-box">
-                    <img class="w-50" src="assets/images/awards-logo001.png" alt="">
-                    <div class="">
-                        <div class="awards-year"><b>2022</b></div>
-                        <div class="awards-name"><b>Thomas S. Huang Memorial Prize</b></div>
-                        <div class="awards-organizer">IEEE PAMI</div>
-                    </div>
-                </div>
-                <!-- Awards Row 03 END-->
-
-                <!-- Awards Row 04-->
-                <div class="col-3 awards-box">
-                    <img class="w-50" src="assets/images/awards-logo001.png" alt="">
-                    <div class="">
-                        <div class="awards-year"><b>2024</b></div>
-                        <div class="awards-name"><b>2024 Woodrow Wilson Award</b></div>
-                        <div class="awards-organizer">Princeton University</div>
-                    </div>
-                </div>
-                <div class="col-3 awards-box">
-                    <img class="w-50" src="assets/images/awards-logo001.png" alt="">
-                    <div class="">
-                        <div class="awards-year"><b>2023</b></div>
-                        <div class="awards-name"><b>2023 Time AI100</b></div>
-                        <div class="awards-organizer">Time</div>
-                    </div>
-                </div>
-                <div class="col-3 awards-box">
-                    <img class="w-50" src="assets/images/awards-logo001.png" alt="">
-                    <div class="">
-                        <div class="awards-year"><b>2023</b></div>
-                        <div class="awards-name"><b>Intel Lifetime Achievements Innovation...</b></div>
-                        <div class="awards-organizer">Intel</div>
-                    </div>
-                </div>
-                <div class="col-3 awards-box">
-                    <img class="w-50" src="assets/images/awards-logo001.png" alt="">
-                    <div class="">
-                        <div class="awards-year"><b>2022</b></div>
-                        <div class="awards-name"><b>Thomas S. Huang Memorial Prize</b></div>
-                        <div class="awards-organizer">IEEE PAMI</div>
-                    </div>
-                </div>
-                <!-- Awards Row 04 END-->
-
+                <!-- News Row 03 END-->
             </div>
-            <!-- Awards List END -->
+            <!-- News List END -->
 
             <!-- Pagination -->
             <div class="row section-padding-120T ps-4 ps-sm-3">
                 <div class="col-12 d-flex justify-content-center">
                     <nav aria-label="Page navigation">
-                        <ul class="pagination">
+                        <ul class="pagination text-center">
                             <li class="page-item">
                                 <a class="page-link" href="#" aria-label="Previous">
                                     <i class="bi bi-chevron-compact-left"></i>
@@ -262,6 +240,8 @@
                             <li class="page-item"><a class="page-link active" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link disabled" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">9</a></li>
                             <li class="page-item">
                                 <a class="page-link" href="#" aria-label="Next">
                                     <i class="bi bi-chevron-compact-right"></i>
