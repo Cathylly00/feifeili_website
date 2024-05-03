@@ -72,9 +72,6 @@
     text-transform: uppercase;
     font-weight: 500;
 }
-.single-timeline-area .single-timeline-content {
-    /**/
-}
 @media only screen and (max-width: 575px) {
     .single-timeline-area .single-timeline-content {
         padding: 20px;
@@ -93,11 +90,7 @@
     margin-right: 5%;
     margin-bottom: 5%;
 }
-@media  (max-width: 576px) {
-    .project-col {
-        
-    }
-}
+
 .input-group {
     --bs-border-color: #8BECFF;
 }

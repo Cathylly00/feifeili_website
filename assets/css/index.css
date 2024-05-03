@@ -1,0 +1,208 @@
+.kv-data-box {
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    z-index: 99;
+    border: 1px solid #E7FBFF;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px 0px #8BECFF;
+    box-shadow: 0px 0px 15px 0px #8BECFF;
+    box-shadow: 0px 0px 4px 0px #C4F5FF;
+    background-color: rgba(231,251,255, 0.1);
+    width: 570px;
+    height: 160px;
+    text-align: center;
+    padding-top: 2%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+@media (max-width: 576px) {
+    .kv-data-box{
+        top: 100%;
+        left: 0;
+        width: 70%;
+        height: fit-content;
+        opacity: 0;
+    }
+    .kv-data-box-text {
+        size: 50%;
+        top: 50%;
+    }
+}
+
+.kv-data-box-text {
+display: inline-block;
+text-transform: uppercase;
+color: #E7FBFF;
+text-shadow: 0 0 0.7em #8BECFF,0 0 0.2em #8BECFF;
+}
+
+.kv-data-box-text h1{
+margin-top: 0px;
+margin-bottom: 10px;
+}
+
+.about-text-box {
+    background: linear-gradient(257.07deg, #07223F 0%, #250414 100%);
+    border-radius: 60px 0 0 60px;
+    padding: 135px 120px 135px;
+}
+@media (max-width: 576px) { 
+    .about-text-box {
+        background: #021927;
+        padding: 0%;
+        margin: 5%;
+        margin-top: 200px;
+    }
+}
+
+
+.about-text {
+    padding-right: 10%;
+}
+
+.about-img {
+    position: relative;
+    left: 0px;
+    width: 677px;
+    z-index: 99;
+}
+
+.about-img-box {
+    position: relative;
+    top: 50%;  
+    float:left;  
+}
+
+.honur-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.honur-logo-box {
+    right: 0px;
+}
+
+.honor-list::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+.bg-img-L {
+    position: relative;
+    z-index: -1;
+}
+
+.index-multi-bg {
+    background-size: cover;
+    background-image: url('../images/bgMagenta.png'), url('../images/bgBlue.png');
+    background-position: left center, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    position: relative;
+    z-index: 5;
+}
+
+.index-bg-bottom {
+    background-size: contain;
+    background-image: url('../images/bg01.png');
+    background-position: center 25%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 4;
+}
+
+.research-banner {
+    height: 700px;
+    background-size: contain;
+    background-image: url('../images/landing/researchBanner.png');
+    background-repeat: no-repeat;
+}
+
+.research-banner-text-box {
+    text-align: center;
+    padding: 20%;
+}
+
+.research-box-left {
+    width: 370px;
+    height: 500px;
+    right: 8%;
+    background-color: #021927;
+    border-radius: 30px;
+    position: relative; 
+    margin-top: 5%;
+    z-index: 20;
+    padding: 2%;
+}
+
+.research-box-right {
+    width: 370px;
+    height: 500px;
+    right: 5%;
+    background-color: #021927;
+    border-radius: 30px;
+    position: relative; 
+    z-index: 30;
+    padding: 2%;
+}
+@media (max-width: 576px) { 
+    .research-box-left {
+        left: 5%;
+    }
+    .research-box-right {
+        left: 5%;
+    }
+}
+
+.research-tag {
+    font-size: small;
+    color: #021927;
+    background-color: #DD277E;
+    border-radius: 20px;
+    text-align: center;
+    width: fit-content;
+    padding: 5px 15px 5px 15px;
+}
+
+.research-new {
+    font-size: smaller;
+    color: #DD277E;
+    margin-bottom: 0px;
+}
+
+.research-publisher {
+    height: 173px;
+    font-size: medium;
+}
+
+.research-author {
+    width: 310px;
+    font-size: small;
+}
+
+.research-DOI {
+    width: 310px;
+    font-size: small;
+}
+
+.research-icon {
+    color: #8BECFF;
+}
+
+.news-card-body {
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.news-card-body img {
+    border-radius: 30px;
+    height: 100%;
+}
+
+.news-card-text {
+    color: #E7FBFF;
+    padding-top: 20px;
+}
+
+.news-card-text-box {
+    width: 100%;
+}
