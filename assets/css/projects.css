@@ -1,4 +1,36 @@
+.project-kv-cover-color{
+    height: auto;
+    background: linear-gradient(230deg, rgba(3,149,255, 0.18) 1%, rgba(2,25,39, 0) ), linear-gradient(60deg, rgba(221,39,126, 0.2) 1%, rgba(2,25,39, 1) );
+    opacity: 0.8;
+}
+
+.project-bg-img{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: -100px;
+    right: 150px;
+    background-image: url('../images/landing/project_bg.png');
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: left center;
+    z-index: -10;
+    box-shadow: -50px 100px 250px 10px #021927 inset;
+}
+
+.project-bg-color-blue{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -300px;
+    right: 50px;
+    background-position: left center;
+    z-index: -5;
+    box-shadow: 120px -150px 200px 50px #DD277E inset, -120px 150px 200px 50px #0395FF inset;
+}
+
 .timeLine {
+    background-color: transparent;
     position: relative;
     &::after {
         content:""; 
@@ -9,7 +41,7 @@
         height: 100%;
         width: 1px;
         margin-top: 5px;
-        background-color: #8BECFF;
+        background: linear-gradient(90deg, rgba(231, 251, 255, 0) 0%, rgba(231, 251, 255, 0.5) 20%, rgba(231, 251, 255, 0.5) 80%, rgba(231, 251, 255, 0) 100%);
     }
 }
 
@@ -54,14 +86,14 @@
 /* Timeline Pointer*/
 .single-timeline-area .timeline-year::before {
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    border:1px solid #8BECFF;
-    background-color: #07223F;
+    border:1px solid #E7FBFF;
+    background-color: #E7FBFF;
     content: "";
     top: 50%;
-    left: 30px;
+    left: 35px;
     z-index: 5;
     margin-top: -5.5px;
 }
@@ -78,15 +110,17 @@
     }
 }
 
-.project-col {
+/* Timeline item */
 
+.project-col {
     position: relative;
     width: 370px;
-    height: 400px;
+    height: 450px;
     z-index: 1;
-    padding: 30px 30px 25px;
+    padding: 30px 30px 30px 30px;
     margin-top: 15px;
-    border: 1px solid #8BECFF;
+    background: linear-gradient(220.69deg, #003556 0%, #021927 100%);
+    border-radius: 30px;
     margin-right: 5%;
     margin-bottom: 5%;
 }
@@ -113,26 +147,32 @@
     color: #8BECFF;
 }
 
-.project-title {
-    width: 310px;
-    height: 84px;
-    font-size: larger;
+.project-col h5 {
+    height: 96px;
 }
 
-.project-publisher {
-    width: 310px;
-    height: 115px;
-    font-size: medium;
+.research-publisher{
+    height: 72px;
+    color: #91A1A5;
+}
+.research-author {
+    height: 80px;
+    color: #91A1A5;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
 }
 
-.project-author {
-    width: 310px;
-    font-size: small;
+.research-DOI {
+    height: 16px;
+    color: #91A1A5;
 }
 
-.project-DOI {
-    width: 310px;
-    font-size: small;
+.research-icon {
+    color: #E7FBFF;
+    position: relative;
+    bottom: 0px;
+    filter: drop-shadow(0px 0px 4px rgba(196,245,255, 1)) drop-shadow(0px 0px 15px rgba(139,236,255, 0.5)) drop-shadow(0px 0px 30px rgba(139,236,255, 0.5));
 }
 
 .project-data::-webkit-scrollbar {
