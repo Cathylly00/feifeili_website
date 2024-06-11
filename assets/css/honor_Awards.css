@@ -1,6 +1,10 @@
 .honor-kv-cover-color {
-    background: linear-gradient(150deg, rgba(7, 34, 63, 0) 0% 0%, rgba(3,149,255, 0.7) 10%);
-    z-index: 25;
+    position: absolute;
+    top: 0;
+    height: 810px;
+    background: linear-gradient(180deg, rgba(7, 34, 63, 0.4) 90%, #07223F 100%);
+    mix-blend-mode: normal;
+    z-index: 1;
 }
 
 .honor-kv-bg {
@@ -11,7 +15,7 @@
 
 .honor-kv-img {
     height: 810px;
-    object-position: top;
+    object-position: top center;
     object-fit: cover;
 }
 
@@ -32,13 +36,16 @@
     }
     @media (max-width: 575.98px) {
     .honor-kv-img {
-        height: 810px;
+        height: 600px;
+        object-position: top;
+        margin-top: 70px;
     } 
 }
 
 .honor-kv-text{
     position: absolute;
     top: 30%;
+    z-index: 2;
 }
 .honor-kv-title{
     font-size: 150px;
@@ -67,11 +74,18 @@
     .honor-kv-text {
     left: 30px; } 
     .honor-kv-title{
+        height: 130px;
         font-size: 5rem;
     }
     .honor-kv-subtitle{
-        font-size: 1rem;
+        font-size: 34px;
     }
+}
+
+
+.award-data-bg{
+    height: 1200px;
+    background: linear-gradient(200deg, rgba(3,149,255, 0.3) 1%, rgba(2,25,39, 1) ); 
 }
 
 .award-data-area{
@@ -80,36 +94,45 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: auto;
+    z-index: 10;
 }
 @media (max-width: 1370px) {
     .award-data-area {
         top: 120%;
     }
 }
+@media (max-width: 1300px) {
+    .award-data-area {
+        top: 170%;
+    }
+}
 @media (max-width: 1200px) {
     .award-data-area {
-        top: 130%;
+        top: 160%;
+    }
+    
+    .award-data-bg{
+        height: 1000px;
+    }
+}@media (max-width: 1024px) {
+    .award-data-area {
+        top: 180%;
     }
 }
-    @media (max-width: 992px) {
-    .award-data-area {
-        top:65%;
-    }
-    }
-    @media (max-width: 768px) {
-    .award-data-area {
-        top: 200%;
-    }
-    }
-    @media (max-width: 575.98px) {
-    .award-data-area {
-        top: 200%;
-    } 
+@media (max-width: 992px) {
+.award-data-area {
+    top:200%;
 }
-
-.award-data-bg{
-    height: 1200px;
-    background: linear-gradient(200deg, rgba(3,149,255, 0.3) 1%, rgba(2,25,39, 1) ); 
+}
+@media (max-width: 768px) {
+.award-data-area {
+    top: 230%;
+}
+}
+@media (max-width: 575.98px) {
+.award-data-area {
+    top: 2400px;
+} 
 }
 
 .awards-list {
@@ -140,16 +163,45 @@
     font-weight: 100;
 }
 
-.ellipse {
+
+@media (max-width: 575.98px) {
+    .award-data-bg{
+        height: 3650px;
+        background: linear-gradient(180deg, rgba(3,149,255, 0) 1%, rgba(2,25,39, 0) ), linear-gradient(60deg, rgba(221,39,126, 0.4) 1%, rgba(2,25,39, 1) );
+    }
+    .honor-footer{
+        background-color: rgba(221,39,126, 0.4);
+    }
+}
+
+.ellipse-red {
+    /* Ellipse 2 */
+
+    position: absolute;
+    width: 1400px;
+    height: 575px;
+    left: -757px;
+    top: 180%;
+    z-index: 0;
+
+    /* Magenta */
+    background: #DD277E;
+    opacity: 0.5;
+    filter: blur(400px);
+
+}
+
+.ellipse-blue {
     /* Ellipse 3 */
 
     position: absolute;
     width: 100%;
     height: 100%;
-    left: 0%;
+    left: 50%;
     top: 60%;
-    z-index: 80;
+    z-index: 10;
     display:inline;
+    filter: blur(350px);
 
     &::after {
         content:""; 
@@ -161,7 +213,7 @@
         right: 0;
         /* background: #E7FBFF; */
         clip-path: ellipse(100% 100% at right center);
-        /* opacity: 0.7; */
+        opacity: 0.7;
         filter: blur(350px);
         /* transform: rotate(78.8deg); */
         background: linear-gradient(to right, rgba(7, 34, 63, 0) 0%, rgba(3,149,255, 0.7) 30%);

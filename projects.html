@@ -22,6 +22,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/aos.css" >
         <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/projects.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
 
     <body>
@@ -77,44 +78,40 @@
         </div>
         <!-- Header End -->
 
-
-        <!-- AI Fei-Fei -->
-        <!-- <div class="aifeifei-icon"> -->
-            <!-- <img class="aifeifei-icon-pic" src="assets/images/aifeifei.png" alt=""> -->
-        <!-- </div> -->
-        <!-- AI Fei-Fei -->
-
-        <!-- Research & Publications -->
-
-        
-
-        <div class="container-fluid section-padding-120T timeLine ">
-            <!-- <div class="project-bg-color-blue"></div> -->
+        <div class="container-fluid section-padding-120T timeLine project-bg-color overflow-x-hidden overflow-y-hidden">
+            <div class="project-bg-color-blue"></div>
+            <div class="project-bg-color-red"></div>
             <div class="project-bg-img"></div>
             <!-- Title Bar -->
             <div class="row section-padding-60B">
-                <div class="col-2 col-lg-1"><div class="box"></div></div>
-                <div class="col-4 col-lg-5"  data-aos="fade-right" data-aos-duration="1000">
-                    <h1 class="title-light">Dr. Li ’s</h1>
-                    <h1 class="title-bold">Research & Publications </h1>
+                <div class="col-1 col-sm-1"><div class="box"></div></div>
+                <div class="col-6 col-sm-5"  data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="title-light" style="font-size: 34px;">Dr. Li ’s</h1>
+                    <h1 class="title-bold" style="font-size: 34px;">Research & Publications </h1>
                 </div>
-                <div class="col-2 col-lg-2"><div class="box"></div></div>
-                <div class="col-4 col-lg-3 align-self-end">
+                <div class="col-5 col-sm-0 d-block d-sm-none"><div class="box"></div></div>
+
+                <div class="col-1 col-sm-2"><div class="box"></div></div>
+                <div class="col-11 col-sm-3 align-self-end mt-4 mt-sm-auto">
                     <!-- Dropdown -->
                     <div class="dropdown d-flex justify-content-sm-end" data-aos="fade-left" data-aos-duration="1000">
                         <button class="btn dropdown-menu-btn d-flex justify-content-between" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="">Tag: All</span>
+                            <span id="show">Tag: All</span>
                             <i class="bi bi-chevron-down"></i>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item active" href="#">All</a></li>
-                            <li><a class="dropdown-item" href="#">Tag</a></li>
-                            <li><a class="dropdown-item" href="#">Tag</a></li>
+                            <li><a class="dropdown-item" id="ALL">All</a></li>
+                            <li><a class="dropdown-item" id="AI">AI</a></li>
+                            <li><a class="dropdown-item" id="GNN">GNN</a></li>
+                            <li><a class="dropdown-item" id="CV">CV</a></li>
+                            <li><a class="dropdown-item" id="Ethical">Ethical</a></li>
+                            <li><a class="dropdown-item" id="NES">NES</a></li>
+                            <li><a class="dropdown-item" id="iGibson">iGibson</a></li>
                         </ul>
                     </div>
                     <!-- Dropdown END-->
                 </div>
-                <div class="col-0 col-lg-1"><div class="box"></div></div>
+                <div class="col-0 col-sm-1"><div class="box"></div></div>
             </div>
             <!-- Title Bar END-->
 
@@ -125,26 +122,26 @@
                         <div class="col-12">
                                 <div class="apland-timeline-area">
                                     <!-- Row 01 -->
-                                    <div class="single-timeline-area" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="single-timeline-area animate__animated animate__fadeInLeft">
                                         <div class="row">
-                                            <div class="col-2 col-md-1">
+                                            <div class="col-1">
                                                 <div class="timeline-year">
-                                                    <p class="d-flex align-items-stretch pt-3">2023</p>
+                                                    <p class="d-flex align-items-stretch pt-auto pt-sm-3">2023</p>
                                                 </div>
                                             </div>
-                                            <div class="col-2 col-md-11 ps-md-5">
+                                            <div class="col-11 ps-md-5">
                                             <div class="row">
                                                 <!-- Col 01 -->
-                                                <div class="project-col col-lg-6">
+                                                <div class="project-col col-lg-6" tag="GNN">
                                                     <div class="single-timeline-content">
                                                         <div class="d-flex justify-content-between">
-                                                            <div class="research-tag fw-bold">Untagged</div>
+                                                            <div class="research-tag fw-bold">GNN</div>
                                                         </div>
                                                         <h5 class="fw-bold pt-4">Guest Editorial: Introduction to the Special Section on Graphs in Vision and Pattern Analysis</h5>
                                                         <p class="fw-light research-publisher pt-4">IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE</p>
                                                         <p class="research-author fw-bold">Bai, S., Torr, P. S., Krishna, R., Li, F., Gupta, A., Zhu, S.</p>
                                                         <p class="research-DOI fw-bold">2023; 45 (6): 6867-6869</p>
-                                                        <i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i>
+                                                        <a href="https://ieeexplore.ieee.org/document/10120667" style="text-decoration:none;" target="_blank"><i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i></a>
                                                     </div>
                                                 </div>
                                                 <!-- Col 01 END-->
@@ -155,68 +152,68 @@
                                     <!-- Row 01 END-->
 
                                     <!-- Row 02 -->
-                                    <div class="single-timeline-area" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="single-timeline-area animate__animated animate__fadeInLeft">
                                         <div class="row">
-                                            <div class="col-2 col-md-1">
+                                            <div class="col-1">
                                                 <div class="timeline-year">
-                                                    <p class="d-flex align-items-stretch pt-3">2022</p>
+                                                    <p class="d-flex align-items-stretch pt-auto pt-sm-3">2022</p>
                                                 </div>
                                             </div>
-                                            <div class="col-2 col-md-11 ps-md-5">
+                                            <div class="col-11 ps-md-5">
                                             <div class="row flex-nowrap overflow-x-auto project-data" id="scroll-area-1">
                                                 <!-- Col 01 -->
-                                                <div class="project-col col-lg-6">
+                                                <div class="project-col col-lg-6" tag="AI">
                                                     <div class="single-timeline-content">
                                                         <div class="d-flex justify-content-between">
-                                                            <div class="research-tag fw-bold">Untagged</div>
+                                                            <div class="research-tag fw-bold">AI</div>
                                                         </div>
                                                         <h5 class="fw-bold pt-4">Socially situated artificial intelligence enables learning from human interaction</h5>
                                                         <p class="fw-light research-publisher pt-4">Proceedings of the National Academy of Sciences of the United States of America</p>
                                                         <p class="research-author fw-bold">Krishna, R., Lee, D., Fei-Fei, L., Bernstein, M. S.</p>
                                                         <p class="research-DOI fw-bold">2022; 119 (39): e2115730119</p>
-                                                        <i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i>
+                                                        <a href="https://www.pnas.org/doi/full/10.1073/pnas.2115730119" style="text-decoration:none;" target="_blank"><i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i></a>
                                                     </div>
                                                 </div>
                                                 <!-- Col 01 END-->
                                                 <!-- Col 02 -->
-                                                <div class="project-col col-lg-6">
+                                                <div class="project-col col-lg-6" tag="AI">
                                                     <div class="single-timeline-content">
                                                         <div class="d-flex justify-content-between">
-                                                            <div class="research-tag fw-bold">Untagged</div>
+                                                            <div class="research-tag fw-bold">AI</div>
                                                         </div>
                                                         <h5 class="fw-bold pt-4">Advances, challenges and opportunities in creating data for trustworthy AI</h5>
                                                         <p class="fw-light research-publisher pt-4">NATURE MACHINE INTELLIGENCE</p>
                                                         <p class="research-author fw-bold">Liang, W., Tadesse, G., Ho, D., Li, F., Zaharia, M., Zhang, C., Zou, J.</p>
                                                         <p class="research-DOI fw-bold">2022</p>
-                                                        <i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i>
+                                                        <a href="https://www.nature.com/articles/s42256-022-00516-1" style="text-decoration:none;" target="_blank"><i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i></a>
                                                     </div>
                                                 </div>
                                                 <!-- Col 02 END-->
                                                 <!-- Col 03 -->
-                                                <div class="project-col col-lg-6">
+                                                <div class="project-col col-lg-6" tag="AI">
                                                     <div class="single-timeline-content">
                                                         <div class="d-flex justify-content-between">
-                                                            <div class="research-tag fw-bold">Untagged</div>
+                                                            <div class="research-tag fw-bold">AI</div>
                                                         </div>
                                                         <h5 class="fw-bold pt-4">Generalizable Task Planning Through Representation Pretraining</h5>
                                                         <p class="fw-light research-publisher pt-4">IEEE ROBOTICS AND AUTOMATION LETTERS</p>
                                                         <p class="research-author fw-bold">Wang, C., Xu, D., Li Fei-Fei</p>
                                                         <p class="research-DOI fw-bold">2022; 7 (3): 8299-8306</p>
-                                                        <i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i>
+                                                        <a href="https://ieeexplore.ieee.org/document/9808141" style="text-decoration:none;" target="_blank"><i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i></a>
                                                     </div>
                                                 </div>
                                                 <!-- Col 03 END-->
                                                 <!-- Col 04 -->
-                                                <div class="project-col col-lg-6">
+                                                <div class="project-col col-lg-6" tag="CV">
                                                     <div class="single-timeline-content">
                                                         <div class="d-flex justify-content-between">
-                                                            <div class="research-tag fw-bold">Untagged</div>
+                                                            <div class="research-tag fw-bold">CV</div>
                                                         </div>
                                                         <h5 class="fw-bold pt-4">Searching for Computer Vision North Stars</h5>
                                                         <p class="fw-light research-publisher pt-4">DAEDALUS</p>
                                                         <p class="research-author fw-bold">Li Fei-Fei, Krishna, R.</p>
                                                         <p class="research-DOI fw-bold">2022; 151 (2): 85-99</p>
-                                                        <i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i>
+                                                        <a href="https://www.amacad.org/publication/searching-computer-vision-north-stars" style="text-decoration:none;" target="_blank"><i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i></a>
                                                     </div>
                                                 </div>
                                                 <!-- Col 04 END-->                                           
@@ -227,68 +224,69 @@
                                     <!-- Row 02 END-->
 
                                     <!-- Row 03 -->
-                                    <div class="single-timeline-area" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="single-timeline-area animate__animated animate__fadeInLeft">
                                         <div class="row">
-                                            <div class="col-2 col-md-1">
+                                            <div class="col-1">
                                                 <div class="timeline-year">
-                                                    <p class="d-flex align-items-stretch pt-3">2021</p>
+                                                    <p class="d-flex align-items-stretch pt-auto pt-sm-3">2021</p>
                                                 </div>
                                             </div>
-                                            <div class="col-2 col-md-11 ps-md-5">
+                                            <div class="col-11 ps-md-5">
                                             <div class="row flex-nowrap overflow-x-auto project-data" id="scroll-area-2">
                                                 <!-- Col 01 -->
-                                                <div class="project-col col-lg-6">
+                                                <div class="project-col col-lg-6" tag="AI">
                                                     <div class="single-timeline-content">
                                                         <div class="d-flex justify-content-between">
-                                                            <div class="research-tag fw-bold">Untagged</div>
+                                                            <div class="research-tag fw-bold">AI</div>
                                                         </div>
-                                                        <h5 class="fw-bold pt-4">Embodied intelligence via learning and evolution.</h5>
+                                                        <h5 class="fw-bold pt-4">Embodied intelligence via learning and evolution</h5>
                                                         <p class="fw-light research-publisher pt-4">Nature communications</p>
                                                         <p class="research-author fw-bold">Gupta, A., Savarese, S., Ganguli, S., Fei-Fei, L.</p>
                                                         <p class="research-DOI fw-bold">2021; 12 (1): 5721</p>
-                                                        <i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i>
+                                                        <a href="https://www.nature.com/articles/s41467-021-25874-z" style="text-decoration:none;" target="_blank"><i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i></a>
                                                     </div>
                                                 </div>
                                                 <!-- Col 01 END-->
                                                 <!-- Col 02 -->
-                                                <div class="project-col col-lg-6">
+                                                <div class="project-col col-lg-6" tag="AI">
                                                     <div class="single-timeline-content">
-                                                        <div class="d-flex justify-content-between">
-                                                            <div class="research-tag fw-bold">Untagged</div>
+                                                        <div class="d-flex justify-content-start">
+                                                            <div class="research-tag fw-bold">AI</div>
+                                                            <div class="research-tag fw-bold ms-4">Ethical</div>
                                                         </div>
                                                         <h5 class="fw-bold pt-4">Scalable Differential Privacy with Sparse Network Finetuning</h5>
                                                         <p class="fw-light research-publisher pt-4"></p>
                                                         <p class="research-author fw-bold">Luo, Z., Wu, D. J., Adeli, E., Li Fei-Fei, IEEE COMP SOC</p>
                                                         <p class="research-DOI fw-bold">IEEE COMPUTER SOC. 2021: 5057-5066</p>
-                                                        <i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i>
+                                                        <a href="https://ieeexplore.ieee.org/document/9578539" style="text-decoration:none;" target="_blank"><i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i></a>
                                                     </div>
                                                 </div>
                                                 <!-- Col 02 END-->
                                                 <!-- Col 03 -->
-                                                <div class="project-col col-lg-6">
+                                                <div class="project-col col-lg-6" tag="NES">
                                                     <div class="single-timeline-content">
                                                         <div class="d-flex justify-content-between">
-                                                            <div class="research-tag fw-bold">Untagged</div>
+                                                            <div class="research-tag fw-bold">NES</div>
                                                         </div>
                                                         <h5 class="fw-bold pt-4">Neural Event Semantics for Grounded Language Understanding</h5>
                                                         <p class="fw-light research-publisher pt-4">TRANSACTIONS OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS</p>
                                                         <p class="research-author fw-bold">Buch, S., Li Fei-Fei, Goodman, N. D.</p>
                                                         <p class="research-DOI fw-bold">2021; 9: 875-890</p>
-                                                        <i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i>
+                                                        <a href="https://aclanthology.org/2021.tacl-1.52/" style="text-decoration:none;" target="_blank"><i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i></a>
                                                     </div>
                                                 </div>
                                                 <!-- Col 03 END-->
                                                 <!-- Col 04 -->
-                                                <div class="project-col col-lg-6">
+                                                <div class="project-col col-lg-6" tag="iGibson">
                                                     <div class="single-timeline-content">
                                                         <div class="d-flex justify-content-between">
-                                                            <div class="research-tag fw-bold">Untagged</div>
+                                                            <div class="research-tag fw-bold">iGibson</div>
                                                         </div>
                                                         <h5 class="fw-bold pt-4">iGibson 1.0: A Simulation Environment for Interactive Tasks in Large Realistic Scenes</h5>
                                                         <p class="fw-light research-publisher pt-4">DAEDALUS</p>
                                                         <p class="research-author fw-bold">Shen, B., Fei Xia, Li, C., Martin-Martin, R., Fan, L., Wang, G., Perez-D'Arpino, C., Buch, S., Srivastava, S., Tchapmi, L., Tchapmi, M., Vainio, K., Wong, J., Li Fei-Fei, Savarese, S., IEEE</p>
                                                         <p class="research-DOI fw-bold">IEEE. 2021: 7520-7527</p>
-                                                        <i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i>
+                                                        <a href="https://arxiv.org/abs/2012.02924" style="text-decoration:none;" target="_blank"><i class="bi bi-search research-icon d-flex justify-content-end pt-4 h5"></i></a>
                                                     </div>
                                                 </div>
                                                 <!-- Col 04 END-->                                          

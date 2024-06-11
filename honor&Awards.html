@@ -22,6 +22,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/aos.css" >
         <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/honor_Awards.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
 
     <body>
@@ -35,11 +36,6 @@
                     <div class="logo d-inline-block">
                         <a href="index.html"><img class="" src="assets/images/feifeili-logo.svg" alt=""></a>
                     </div>
-
-                    <div class="col-sm-0 d-block d-sm-none text-end flex">
-                        <a href="https://www.linkedin.com/in/fei-fei-li-4541247" target="_blank"><img class="link-icon" src="assets/images/logo-linkedin.svg" alt=""></a>
-                        <a href="https://twitter.com/drfeifei" target="_blank"><img class="link-icon" src="assets/images/logo-x.svg" alt=""></a>
-                        <a href="#" target="_blank"><img class="link-icon" src="assets/images/logo-envelope.svg" alt=""></a>                    </div>
 
                     <div class="nav-box justify-content--sm-center flex d-inline-block">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,10 +82,11 @@
         
 
         <!-- KV -->
-        <div class="kv">
+        <div class="kv overflow-x-hidden overflow-y-hidden">
             <div class="container-fluid">
-                <!-- <div class="ellipse"></div> -->
-                <div class="row honor-kv-bg-color">
+                <div class="ellipse-blue"></div>
+                <div class="row">
+                    <div class="honor-kv-cover-color"></div>
                     <img class="full-width honor-kv-bg honor-kv-img" src="assets/images/landing/awards_bg.jpg">
                     <div class="col-12 honor-kv-text" style="left: 0;"  data-aos="fade-up" data-aos-duration="1000">
                         <div>
@@ -103,7 +100,8 @@
         <!-- KV End -->
 
         <!-- Award -->
-        <div class="container-fluid award-data-bg">
+        <div class="container-fluid award-data-bg overflow-x-hidden overflow-y-hidden">
+            <div class="ellipse-red "></div>
         <div class="container award-data-area section-padding">
             <div class="row mx-auto">
             <!-- Dropdown -->
@@ -114,13 +112,12 @@
                 <div class="col-10 col-sm-6 col-lg-3">
                     <div class="dropdown d-flex justify-content-sm-end">
                         <button class="btn dropdown-menu-btn d-flex justify-content-between" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="">Sort by: Newest</span>
+                            <span id="show">Sort by: Newest</span>
                             <i class="bi bi-chevron-down"></i>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item active" href="#">Newest</a></li>
-                            <li><a class="dropdown-item" href="#">Name (A-Z)</a></li>
-                            <li><a class="dropdown-item" href="#">Name (Z-A)</a></li>
+                            <li><a class="dropdown-item" id="awards-Newest">Newest</a></li>
+                            <li><a class="dropdown-item" id="awards-Oldest">Oldest</a></li>
                         </ul>
                     </div>
                 </div>
@@ -128,9 +125,9 @@
             <!-- Dropdown END -->
 
             <!-- Awards List-->
-            <div class="row flex awards-list section-padding-60T justify-content-between">
+            <div class="row flex awards-list section-padding-60T justify-content-center justify-content-sm-between animate__animated animate__fadeInUp" id="awards-list">
                 <!-- Awards Row 01-->
-                <div class="card col-4">
+                <div class="card col-4" card-title="2024">
                     <img src="assets/images/landing/honor01.png" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
@@ -143,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card col-4">
+                <div class="card col-4" card-title="2023">
                     <img src="assets/images/landing/honor02.png" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
@@ -156,7 +153,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card col-4">
+                <div class="card col-4" card-title="2023">
                     <img src="assets/images/landing/honor03.png" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
@@ -172,7 +169,7 @@
                 <!-- Awards Row 01 END-->
 
                 <!-- Awards Row 02-->
-                <div class="card col-4">
+                <div class="card col-4" card-title="2022">
                     <img src="assets/images/landing/honor04.jpg" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
@@ -185,7 +182,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card col-4">
+                <div class="card col-4" card-title="2021">
                     <img src="assets/images/landing/honor05.jpg" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
@@ -198,7 +195,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card col-4">
+                <div class="card col-4" card-title="2020">
                     <img src="assets/images/landing/honor06.jpg" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
@@ -214,7 +211,7 @@
                 <!-- Awards Row 02 END-->
 
                 <!-- Awards Row 03-->
-                <div class="card col-4">
+                <div class="card col-4" card-title="2020">
                     <img src="assets/images/landing/honor06.jpg" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
@@ -227,7 +224,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card col-4">
+                <div class="card col-4" card-title="2020">
                     <img src="assets/images/landing/honor08.jpg" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
@@ -240,7 +237,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card col-4">
+                <div class="card col-4" card-title="2020">
                     <img src="assets/images/landing/honor09.png" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
@@ -288,15 +285,18 @@
         <!-- Award END -->
 
         <!-- Footer -->
-        <div class="container-fluid">
+        <div class="container-fluid honor-footer">
             <div class="row footer">
-                <div class="col-6">
+                <div class="col-0 col-sm-6 d-none d-sm-block">
                     Copyright © 2024 Fei-Fei Li. <br class="d-block d-sm-none">All rights reserved.
                 </div>
                 <div class="col-6 social-icon flex">
                     <span>Stay Connected</span>
                     <a href="index.html"><img class="" src="assets/images/logo-linkedin.svg" alt=""></a>
                     <a href="index.html"><img class="" src="assets/images/logo-x.svg" alt=""></a>
+                </div>
+                <div class="col-12 col-sm-0 d-block d-sm-none mt-4">
+                    Copyright © 2024 Fei-Fei Li. <br class="d-none d-sm-block">All rights reserved.
                 </div>
             </div>
         </div>

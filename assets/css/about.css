@@ -22,7 +22,8 @@
     }
     @media (max-width: 575.98px) {
     .about-kv-text {
-        bottom: 30px;
+        align-items: end;
+        top: 20%;
         right: 30px; } }
 
 .edu_box {
@@ -74,6 +75,16 @@
         }
     } 
 }
+@media (max-width: 576px) {
+    .edu_box{
+        width: 343px;
+        height: 280px;
+        top: 394px;
+        &::after {
+            content:""; 
+        }
+    } 
+}
 
 .edu-data-box {
     position: absolute;
@@ -92,15 +103,21 @@
 }
 @media (max-width: 576px) {
     .edu-data-box{
-        top: 100%;
+        /* top: 100%; */
         left: 0;
-        width: 70%;
-        height: fit-content;
+        width: 343px;
+        height: 674px;
+        padding-left: 0px;
+        padding-right: 0px;
         opacity: 0;
     }
     .edu-data-box-text {
         size: 50%;
         top: 50%;
+    }
+
+    .edu-data-box h1{
+        font-size: 34px;
     }
 }
 
@@ -112,6 +129,15 @@
 .kv-bg {
     max-width:1400px;
     max-height: 700px;
+    object-position: center;
+    object-fit: cover;
+}
+@media (max-width: 576px) {
+    .kv-bg {
+        background-size: 150%;
+        height: 740px;
+        object-position: 13% 10%;
+    }
 }
 
 .kv-data-box-text {
@@ -166,8 +192,11 @@ margin-bottom: 10px;
     z-index: 1;
 }
 @media only screen and (max-width: 575px) {
+    .apland-timeline-area{
+        height: 280px;
+    }
     .single-timeline-area {
-        padding-left: 100px;
+        width: 280px;
     }
 }
 .single-timeline-area .timeline-year {
@@ -219,13 +248,19 @@ margin-bottom: 10px;
 }
 @media only screen and (max-width: 575px) {
     .single-timeline-area .single-timeline-content {
-        padding: 20px;
+        
     }
 }
 
 .timeline-text p {
     text-align: start;
     margin: 0px;
+}
+
+@media (max-width: 576px) {
+    .timeline-text p {
+        font-size: 14px;
+    }
 }
 
 #edu-highlight-text {
@@ -336,16 +371,17 @@ margin-bottom: 10px;
     font-size: 20px;
     text-align: center;
     letter-spacing: 0.1rem;
-}@media (max-width: 576px) {
+}
+@media (max-width: 576px) {
     .tab-box{
         width: 40%;
         height: 40%;
         font-size: 55%;
     }
-    }
+}
     
 .contact-area {
-    background-image: url("../images/landing/contact_bg.jpg");
+    background: url("../images/landing/contact_bg.jpg"), linear-gradient(0deg, #021927, #021927),linear-gradient(90deg, rgba(28, 17, 33, 0) 50%, #1C1121 73.51%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -383,10 +419,30 @@ margin-bottom: 10px;
 .about-footer {
     background: linear-gradient(45deg, rgba(221, 39, 126, 0.3) 20%, #021927), linear-gradient(63.9deg, #021927, #021927);
 }
+@media (max-width: 576px) {
+    .about-footer {
+        background: linear-gradient(63.9deg, rgba(221, 39, 126, 0.3) 70%, #021927), linear-gradient(45deg, #021927, #021927)
+    }
+}
 
 .contact-big-icon {
     font-size: 60px;
     text-shadow: 0 0 0.1em #8BECFF,0 0 0.0em #8BECFF;
+}
+
+@media (max-width: 576px) {
+    .contact-box{
+        height: fit-content;
+    }
+    .contact-box-content{
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .contact-area {
+        background-position: 10% 0%;
+        background-size: 200%;
+        padding-right: 0;
+    }
 }
 
 .dots-bg{

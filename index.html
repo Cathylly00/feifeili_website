@@ -33,19 +33,20 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                 <div class="full-width d-flex justify-content-between">
-                    <div class="logo d-inline-block">
-                        <a href="index.html"><img class="" src="assets/images/feifeili-logo.svg" alt=""></a>
-                    </div>
+                    <a class="logo navbar-brand" href="index.html"><img class="" src="assets/images/feifeili-logo.svg" alt=""></a>
 
-                    <div class="col-sm-0 d-block d-sm-none text-end flex">
-                        <a href="https://www.linkedin.com/in/fei-fei-li-4541247" target="_blank"><img class="link-icon" src="assets/images/logo-linkedin.svg" alt=""></a>
-                        <a href="https://twitter.com/drfeifei" target="_blank"><img class="link-icon" src="assets/images/logo-x.svg" alt=""></a>
-                        <a href="#" target="_blank"><img class="link-icon" src="assets/images/logo-envelope.svg" alt=""></a>                    </div>
+                    <!-- <div class="col-sm-0 d-block d-sm-none text-end flex"> -->
+                        <!-- <a href="https://www.linkedin.com/in/fei-fei-li-4541247" target="_blank"><img class="link-icon" src="assets/images/logo-linkedin.svg" alt=""></a> -->
+                        <!-- <a href="https://twitter.com/drfeifei" target="_blank"><img class="link-icon" src="assets/images/logo-x.svg" alt=""></a> -->
+                        <!-- <a href="#" target="_blank"><img class="link-icon" src="assets/images/logo-envelope.svg" alt=""></a> -->
+                    <!-- </div> -->
 
-                    <div class="nav-box justify-content--sm-center flex d-inline-block">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <div class="nav-box justify-content-sm-center flex d-inline-block">
+                        <div class="full-width d-flex justify-content-end">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        </div>
                         <div class="collapse navbar-collapse flex" id="navbarSupportedContent">
                             <ul class="navbar-nav justify-content-center ms-3 me-3 mb-2 mb-lg-0">
                                 <li class="nav-item nav-item-active">
@@ -89,29 +90,47 @@
         <div class="kv">
             <div class="container-fluid">
                 <div class="row">
-                    <img class="full-width" src="assets/images/bg01-1.png" alt="">
+                    <img class="full-width d-none d-sm-block" src="assets/images/bg01-1.png" alt="">
+                    <img class="full-width d-block d-sm-none" src="assets/images/bg01-2.png" alt="">
                     <div class="col-10 col-md-8 col-lg-4 kv-text" data-aos="fade-right" data-aos-duration="1000">
                         <div class="flex">
                             <h5 class="kv-quote">Fei-Fei's Quote</h5>
                             <div class="kv-quote-line"></div>
                         </div>
-                        <h1 class="title-light pb-5">I believe in human-centered AI to benefit people in positive and benevolent ways.</h1>
+                        <h1 class="title-light pb-3 pb-sm-5" style="letter-spacing: 0.1rem; font-weight: 400; line-height: 44.2px;">I believe in human-centered AI to benefit people in positive and benevolent ways.</h1>
                         <!-- <button class="main-btn">Chat with AI Fei-Fei</button> -->
                     </div>
                 </div>
-                <div class="row">
+                <div class="row d-sm-block d-none">
                     <div class="col-0 col-sm-1"><div class="box"></div></div>
-                    <div class="col-10 col-sm-5 m-4 m-sm-3 kv-data-box d-flex justify-content-between"  data-aos="fade-right" data-aos-duration="1000">
+                    <div class="col-12 col-sm-5 m-4 m-sm-3 kv-data-box d-flex justify-content-around justify-content-sm-between align-items-center"  data-aos="fade-right" data-aos-duration="1000">
                         <div class="kv-data-box-text">
-                            <h1>100+</h1>
+                            <h1>30+</h1>
                             <p>Honors & Awards</p>
                         </div>
                         <div class="kv-data-box-text">
-                            <h1>200+</h1>
+                            <h1>150+</h1>
                             <p>Research</p>
                         </div>
+                        <div class="kv-data-box-text d-none d-sm-block">
+                            <h1>80+</h1>
+                            <p>Publications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-block d-sm-none">
+                    <div class="col-0 col-sm-1"><div class="box"></div></div>
+                    <div class="col-12 col-sm-5 m-4 m-sm-3 kv-data-box d-flex justify-content-around justify-content-sm-between align-items-center"  data-aos="fade-right" data-aos-duration="1000" style="z-index: 5;">
                         <div class="kv-data-box-text">
-                            <h1>330+</h1>
+                            <h1>30+</h1>
+                            <p>Honors & Awards</p>
+                        </div>
+                        <div class="kv-data-box-text">
+                            <h1>150+</h1>
+                            <p>Research</p>
+                        </div>
+                        <div class="kv-data-box-text d-none d-sm-block">
+                            <h1>80+</h1>
                             <p>Publications</p>
                         </div>
                     </div>
@@ -122,9 +141,9 @@
 
 
         <!-- About -->
-        <div class="container-fluid index-multi-bg">
+        <div class="container-fluid index-multi-bg overflow-x-hidden overflow-y-hidden">
             <!-- <div class="dots-bg"></div> -->
-            <div class="row about section-padding-60B flex">
+            <div class="row about section-padding-60B d-flex">
                     <div class="col-lg-5 col-12 flex-col align-self-end p-0 " data-aos="fade-right" data-aos-duration="1000">
                         <img class="full-width about-img" src="assets/images/landing/robotHand.png" alt="">
                     </div>
@@ -144,22 +163,22 @@
 
         <!-- Honors & Awards -->
             <div class="row flex section-padding-60" data-aos="fade-right" data-aos-duration="1000">
-                <div class="col-1"><div class="box"></div></div>
-                <div class="col-8 text-start">
+                <div class="col- col-sm-1"><div class="box"></div></div>
+                <div class="col-12 col-sm-8 text-start">
                     <h1 class="title-light">Dr Li.</h1>
                     <h1 class="title-bold">Honors & Awards</h1>
                 </div>
 
-                <div class="col-3 text-start"  data-aos="fade-right" data-aos-duration="1000">
+                <div class=" col-0 col-sm-3 text-start d-none d-sm-block"  data-aos="fade-right" data-aos-duration="1000">
                     <a href="honor&Awards.html" role="button" class="main-btn">Learn more</a>
                 </div>
                 
             </div>
             <div class="row flex" data-aos="fade-up" data-aos-duration="1000">
                 <div class="col-12" >
-                    <div class="row flex-nowrap overflow-x-auto honor-list pt-4 pb-4" id="scroll-area-index">
+                    <div class="row flex-nowrap overflow-x-auto honor-list pt-4 pb-1" id="scroll-area-index">
                         <!-- Honor 01 -->
-                        <div class="card col-3 me-5" style="width: 22rem; margin-left: 10%;">
+                        <div class="card col-3 me-4 me-sm-5" id="honor-card-1">
                             <img src="assets/images/landing/honor01.png" class="card-img-top" alt="">
                             <div class="card-body d-flex justify-content-between">
                                 <div class="card-text-box d-inline-block">
@@ -173,7 +192,7 @@
                             </div>
                         </div>
                         <!-- Honor 02 -->
-                        <div class="card col-3 me-5" style="width: 22rem;">
+                        <div class="card col-3 me-4 me-sm-5">
                             <img src="assets/images/landing/honor02.png" class="card-img-top" alt="">
                             <div class="card-body d-flex justify-content-between">
                                 <div class="card-text-box d-inline-block">
@@ -187,7 +206,7 @@
                             </div>
                         </div>
                         <!-- Honor 03 -->
-                        <div class="card col-3 me-5" style="width: 22rem;">
+                        <div class="card col-3 me-4 me-sm-5">
                             <img src="assets/images/landing/honor03.png" class="card-img-top" alt="">
                             <div class="card-body d-flex justify-content-between">
                                 <div class="card-text-box d-inline-block">
@@ -201,7 +220,7 @@
                             </div>
                         </div>
                         <!-- Honor 04 -->
-                        <div class="card col-3 me-5" style="width: 22rem;">
+                        <div class="card col-3 me-4 me-sm-5">
                             <img src="assets/images/landing/honor04.jpg" class="card-img-top" alt="">
                             <div class="card-body d-flex justify-content-between">
                                 <div class="card-text-box d-inline-block">
@@ -217,11 +236,14 @@
                     </div>
                 </div>
             </div>
+            <div class=" col-12 col-sm-0 text-start d-block d-sm-none"  data-aos="fade-right" data-aos-duration="1000">
+                <a href="honor&Awards.html" role="button" class="main-btn">Learn more</a>
+            </div>
         <!-- Honors & Awards End -->
 
         <!-- Projects -->
-        <div class="row flex">
-            <div class="row flex-nowrap section-padding ">
+        <div class="row project-row">
+            <div class="row d-flex flex-wrap flex-sm-nowrap section-padding ">
                 <div class="col-lg-5 col-12 research-banner"  data-aos="fade-right" data-aos-duration="1000">
                     <div class="research-banner-text-box text-start">
                     <h1 class="title-light">Dr Li.'s</h1>
@@ -236,11 +258,11 @@
                         <div class="research-tag fw-bold">Research</div>
                         <p class="research-new fw-bold">New!</p>
                     </div>
-                    <h5 class="fw-bold pt-4">Guest Editorial: Introduction to the Special Section on Graphs in Vision and Pattern Analysis</h5>
-                    <p class="fw-light research-publisher pt-4">IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE</p>
+                    <h5 class="fw-bold pt-4 research-title">Guest Editorial: Introduction to the Special Section on Graphs in Vision and Pattern Analysis</h5>
+                    <p class="fw-light research-publisher pt-3 pt-sm-4">IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE</p>
                     <p class="research-author fw-bold">Bai, S., Torr, P. S., Krishna, R., Li, F., Gupta, A., Zhu, S.</p>
                     <p class="research-DOI fw-bold">2023; 45 (6): 6867-6869</p>
-                    <i class="bi bi-search research-icon d-flex justify-content-end pt-4 h4"></i>
+                    <a href="https://ieeexplore.ieee.org/document/10120667" style="text-decoration:none;" target="_blank"><i class="bi bi-search research-icon d-flex justify-content-end pt-2 pt-sm-4 h4"></i></a>
                 </div>
                 <!-- Right Box -->
                 <div class="col-lg-4 col-12 research-box-right col-sm-offset-2" data-aos="fade-left" data-aos-duration="1000">
@@ -248,11 +270,11 @@
                         <div class="research-tag fw-bold">Research</div>
                         <p class="research-new fw-bold">New!</p>
                     </div>
-                    <h5 class="fw-bold pt-4">Guest Editorial: Introduction to the Special Section on Graphs in Vision and Pattern Analysis</h5>
-                    <p class="fw-light research-publisher pt-4">IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE</p>
-                    <p class="research-author fw-bold">Bai, S., Torr, P. S., Krishna, R., Li, F., Gupta, A., Zhu, S.</p>
-                    <p class="research-DOI fw-bold">2023; 45 (6): 6867-6869</p>
-                    <i class="bi bi-search research-icon d-flex justify-content-end pt-4 h4"></i>
+                    <h5 class="fw-bold pt-4 research-title">Socially situated artificial intelligence enables learning from human interaction</h5>
+                    <p class="fw-light research-publisher pt-3 pt-sm-4">Proceedings of the National Academy of Sciences of the United States of America</p>
+                    <p class="research-author fw-bold">Krishna, R., Lee, D., Fei-Fei, L., Bernstein, M. S.</p>
+                    <p class="research-DOI fw-bold">2022; 119 (39): e2115730119</p>
+                    <a href="https://www.pnas.org/doi/full/10.1073/pnas.2115730119" style="text-decoration:none;" target="_blank"><i class="bi bi-search research-icon d-flex justify-content-end pt-2 pt-sm-4 h4"></i></a>
                 </div>
                 <!-- <div class="col-lg-1 col-0"> -->
                     <!-- <div class="box"></div> -->
@@ -263,56 +285,62 @@
 
 
         <!-- News -->
-                <div class="row d-flex justify-content-center" >
-                <div class="col-1"> <div class="box"></div> </div>
-                    <div class="col-8 text-start" data-aos="fade-right" data-aos-duration="1000">
+                <div class="row d-flex justify-content-center p-4 psm-3" >
+                <div class="col-0 col-sm-1"> <div class="box"></div> </div>
+                    <div class="col-12 col-sm-8 text-start" data-aos="fade-right" data-aos-duration="1000">
                         <h1 class="title-light">Latest</h1>
                         <h1 class="title-bold">News & Articles</h1>
                     </div>
 
-                    <div class="col-3 align-self-end" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="col-0 col-sm-3 align-self-end d-none d-sm-block" data-aos="fade-right" data-aos-duration="1000">
                         <a href="news.html" role="button" class="main-btn">Learn more</a>
                     </div>
                 </div>
-                <div class="row d-flex section-padding-120B justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+                <div class="row d-flex section-padding-120B justify-content-center p-4 psm-3" data-aos="fade-up" data-aos-duration="1000">
                     <!-- <div class="col-1"><div class="box"></div></div> -->
                     <!-- News 01 -->
-                    <div class="col-5 section-padding-60">
+                    <div class="col-12 col-sm-5 pb-5 pb-sm-3">
                         <div class="card news-card-body" style="width: auto;">
                             <img src="assets/images/landing/news03.png" class="card-img-top " style="width: auto;" alt="">
                             <div class="card-body d-flex justify-content-between">
                                 <div class="news-card-text-box d-inline-block">
                                 <p class="card-title">Mar 28, 2023</p>
                                 <p class="news-card-text">AI expert Prof. Fei Fei Li comes to Taiwan to share her observation about the future of AI</p>
+                                <a href="https://meet-global.bnext.com.tw/articles/view/47898" class="stretched-link"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- News 02 -->
-                    <div class="col-2 section-padding-60" >
+                    <div class="col-6 col-sm-2" >
                         <div class="card news-card-body" style="width: auto;">
                             <img src="assets/images/landing/news02.png" class="card-img-top " style="width: auto;" alt="">
                             <div class="card-body d-flex justify-content-between">
                                 <div class="news-card-text-box d-inline-block">
                                 <p class="card-title">Feb 23, 2024</p>
                                 <p class="news-card-text">‘The Worlds I See’ by AI visionary Fei-Fei Li ’99 selected as Princeton Pre-read</p>
+                                <a href="https://www.princeton.edu/news/2024/02/23/worlds-i-see-ai-visionary-fei-fei-li-99-selected-princeton-pre-read" class="stretched-link"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- News 03 -->
-                    <div class="col-3 section-padding-60">
+                    <div class="col-6 col-sm-3">
                         <div class="card news-card-body" style="width: auto;">
                             <img src="assets/images/landing/news01.png" class="card-img-top " style="width: auto;" alt="">
                             <div class="card-body d-flex justify-content-between">
                                 <div class="news-card-text-box d-inline-block">
                                 <p class="card-title">Feb 5, 2024</p>
                                 <p class="news-card-text">Fascination, persistence and optimism how Fei-Fei Li helped shape the AI revolution..</p>
+                                <a href="https://theconversation.com/fascination-persistence-and-optimism-how-fei-fei-li-helped-shape-the-ai-revolution-in-a-field-dominated-by-alpha-males-222394" class="stretched-link"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- <div class="col-1"><div class="box"></div></div> -->
+                </div>
+                <div class=" col-12 col-sm-0 text-start d-block d-sm-none"  data-aos="fade-right" data-aos-duration="1000">
+                    <a href="news.html" role="button" class="main-btn">Learn more</a>
                 </div>
         </div>
         <!-- News End -->
@@ -321,14 +349,17 @@
         <!-- Footer -->
         <div class="container-fluid">
             <div class="row footer">
-                <div class="col-6">
+                <div class="col-0 col-sm-6 d-none d-sm-block">
                     Copyright © 2024 Fei-Fei Li. <br class="d-block d-sm-none">All rights reserved.
                 </div>
-                <div class="col-6 social-icon flex">
+                <div class="col-12 col-sm-6 social-icon flex justify-content-start justify-content-sm-end">
                     <span>Stay Connected</span>
                     <a href="index.html"><img class="" src="assets/images/logo-linkedin.svg" alt=""></a>
                     <a href="index.html"><img class="" src="assets/images/logo-x.svg" alt=""></a>
                     <a href="#" target="_blank"><img class="link-icon" src="assets/images/logo-envelope.svg" alt=""></a>
+                </div>
+                <div class="col-12 col-sm-0 d-block d-sm-none mt-4">
+                    Copyright © 2024 Fei-Fei Li. <br class="d-none d-sm-block">All rights reserved.
                 </div>
             </div>
         </div>

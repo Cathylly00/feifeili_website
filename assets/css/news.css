@@ -4,6 +4,7 @@
 }
 
 .news-kv-img {
+    position: relative;
     height: 85%;
     border-radius: 30px;
     object-position: center;
@@ -17,7 +18,7 @@
     background-color: #FFFFFF;
     position: relative;
     margin-top: 30%; 
-    left: 0px;
+    
     z-index: 20;
 
 }
@@ -35,6 +36,21 @@
 .news-kv-text-title {
     font-size: 20px;
     color: #021927;
+}
+
+@media only screen and (max-width: 575px) {
+    .news-kv-img {
+        top: 20px;
+    }
+    .news-kv-text-box {
+        padding-top: 20px;
+        width: 95%;
+        margin-top: 0%; 
+        right: 0;
+    }
+    .news-kv-text-title {
+        font-size: 18px;
+    }
 }
 
 .news-picture {
@@ -55,4 +71,11 @@
 
 .card-text-box {
     width: 100%;
+}
+
+@media (max-width: 575.98px) {
+    .news-data-bg{
+        height: fit-content;
+        background: linear-gradient(180deg, rgba(3,149,255, 0.2) 1%, rgba(2,25,39, 0) ), linear-gradient(60deg, rgba(221,39,126, 0.4) 1%, rgba(2,25,39, 1) );
+    }
 }

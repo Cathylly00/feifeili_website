@@ -85,16 +85,19 @@
         <!-- AI Fei-Fei -->
 
         <!-- KV -->
-        <div class="container-fluid news-kv-cover-color">
+        <div class="container-fluid news-kv-cover-color overflow-x-hidden overflow-y-hidden news-data-bg">
         <div class="kv">
             <div class="container section-padding-120-60">
-                <div class="row">
-                <div class="row ">
+                <div class="row d-flex">
+                <div class="row d-flex">
                     <div class="col-12 col-sm-4">
-                        
                         <div class="news-kv-title align-self-start" data-aos="fade-right" data-aos-duration="1000">
                             <h1 class="title-light">Latest</h1>
                             <h1 class="title-bold">News & Articles</h1>
+                        </div>
+
+                        <div class="col-12 col-sm-0 d-block d-sm-none" data-aos="fade-left" data-aos-duration="1000">
+                            <img class="full-width news-kv-img" src="assets/images/landing/news03.png" alt="">
                         </div>
 
                         <div class="news-kv-text-box" data-aos="fade-right" data-aos-duration="1000">
@@ -102,12 +105,12 @@
                                 <p class="news-kv-text-date fw-bold">Mar 19, 2024</p>
                                 <p class="news-kv-text-subtitle">Meet Global</p>
                             </div>
-                            <p class="news-kv-text-title fw-bold pb-4">AI expert Prof. Fei Fei Li comes to Taiwan to share her observation about the future of AI</p>
-                            <a href="news.html" role="button" class="main-btn">Learn more</a>
+                            <p class="news-kv-text-title fw-bold pb-3 pb-sm-4">AI expert Prof. Fei Fei Li comes to Taiwan to share her observation about the future of AI</p>
+                            <a href="https://meet-global.bnext.com.tw/articles/view/47898" role="button" class="main-btn">Learn more</a>
                         </div>
                     </div>
-                    <div class="col-0 col-sm-8" data-aos="fade-left" data-aos-duration="1000">
-                        <img class="full-width d-none d-sm-block news-kv-img" src="assets/images/landing/news03.png" alt="">
+                    <div class="col-0 col-sm-8 d-none d-sm-block" data-aos="fade-left" data-aos-duration="1000">
+                        <img class="full-width news-kv-img" src="assets/images/landing/news03.png" alt="">
                     </div>
                 </div>
             </div>
@@ -115,23 +118,22 @@
         <!-- KV End -->
 
         <!-- News -->
-        <div class="container section-padding-120">
+        <div class="container section-padding-120 overflow-x-hidden overflow-y-hidden">
             <div class="row mx-auto">
                 <!-- Dropdown -->
-            <div class="row flex justify-content-end pe-0">
-                <div class="col-2 col-sm-6 col-lg-9">
+            <div class="row flex justify-content-center justify-content-sm-end pe-0">
+                <div class="col-0 col-sm-6 col-lg-9">
                     <div class="box"></div>
                 </div>
-                <div class="col-10 col-sm-6 col-lg-3">
-                    <div class="dropdown d-flex justify-content-sm-end" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-11 col-sm-6 col-lg-3">
+                    <div class="dropdown d-flex justify-content-sm-end news-dropdown" data-aos="fade-left" data-aos-duration="1000">
                         <button class="btn dropdown-menu-btn d-flex justify-content-between" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="">Sort by: Newest</span>
+                            <span id="show">Sort by: Newest</span>
                             <i class="bi bi-chevron-down"></i>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item active" href="#">Newest</a></li>
-                            <li><a class="dropdown-item" href="#">Name (A-Z)</a></li>
-                            <li><a class="dropdown-item" href="#">Name (Z-A)</a></li>
+                            <li><a class="dropdown-item" id="news-Newest">Newest</a></li>
+                            <li><a class="dropdown-item" id="news-Oldest">Oldest</a></li>
                         </ul>
                     </div>
                 </div>
@@ -139,101 +141,110 @@
             <!-- Dropdown END -->
 
             <!-- News List-->
-            <div class="row flex awards-list section-padding-60T justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row flex news-list section-padding-60T justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                 <!-- News Row 01-->
-                <div class="card col-4">
+                <div class="card col-4" news-years="2024" news-month="02" news-day="23">
                     <img src="assets/images/landing/news02.png" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
                         <p class="card-title">Feb 23, 2024</p>
                         <p class="card-sub-title fw-bold">‘The Worlds I See’ by AI visionary Fei-Fei Li ’99 selected as Princeton Pre-read</p>
                         <p class="card-text">Princeton University</p>
+                        <a href="https://www.princeton.edu/news/2024/02/23/worlds-i-see-ai-visionary-fei-fei-li-99-selected-princeton-pre-read" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
-                <div class="card col-4">
+                <div class="card col-4" news-years="2024" news-month="02" news-day="05">
                     <img src="assets/images/landing/news01.png" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
                         <p class="card-title">Feb 5, 2024</p>
                         <p class="card-sub-title fw-bold">Fascination, persistence and optimism how Fei-Fei Li helped shape the AI revolution..</p>
                         <p class="card-text">The Conversation</p>
+                        <a href="https://theconversation.com/fascination-persistence-and-optimism-how-fei-fei-li-helped-shape-the-ai-revolution-in-a-field-dominated-by-alpha-males-222394" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
-                <div class="card col-4">
+                <div class="card col-4" news-years="2023" news-month="12" news-day="31">
                     <img src="assets/images/landing/news04.jpg" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
                         <p class="card-title">Dec 31, 2023</p>
                         <p class="card-sub-title fw-bold">科技與人性的交織：李飛飛如何讓AI 更懂人心</p>
                         <p class="card-text">TechNews 科技新報</p>
+                        <a href="https://technews.tw/2023/12/31/fei-fei-li/" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
                 <!-- News Row 01 END-->
 
                 <!-- News Row 02-->
-                <div class="card col-4">
+                <div class="card col-4" news-years="2023" news-month="12" news-day="15">
                     <img src="assets/images/landing/news05.png" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
                         <p class="card-title">Dec 15, 2023</p>
                         <p class="card-sub-title fw-bold">AI scientist Fei-Fei Li: 'Maths is pretty clean. Humans are messy'</p>
                         <p class="card-text">Financial Times</p>
+                        <a href="https://www.ft.com/content/d5f91c27-3be8-454a-bea5-bb8ff2a85488" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
-                <div class="card col-4">
+                <div class="card col-4" news-years="2023" news-month="12" news-day="11">
                     <img src="assets/images/landing/news06.png" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
                         <p class="card-title">Dec 11, 2023</p>
                         <p class="card-sub-title fw-bold">Stanford's Fei-Fei Li on human-centered AI</p>
                         <p class="card-text">McKinsey & Company</p>
+                        <a href="https://www.mckinsey.com/featured-insights/mckinsey-on-books/author-talks-dr-fei-fei-li-sees-worlds-of-possibilities-in-a-multidisciplinary-approach-to-ai" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
-                <div class="card col-4">
+                <div class="card col-4" news-years="2023" news-month="11" news-day="11">
                     <img src="assets/images/landing/news07.png" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
                         <p class="card-title">Nov 11, 2023</p>
                         <p class="card-sub-title fw-bold">The Worlds I See — keeping the human at the heart of AI</p>
                         <p class="card-text">Financial Times</p>
+                        <a href="https://www.ft.com/content/de3f4813-4f36-40c7-9d50-980144674d87" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
                 <!-- News Row 02 END-->
 
                 <!-- News Row 03-->
-                <div class="card col-4">
+                <div class="card col-4" news-years="2023" news-month="11" news-day="07">
                     <img src="assets/images/landing/news08.jpg" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
                         <p class="card-title">Nov 7, 2023</p>
                         <p class="card-sub-title fw-bold">The Worlds She Sees with Fei-Fei Li - The Worlds She Sees with Fei-Fei Li The Worlds ...</p>
                         <p class="card-text">Andreessen Horowitz</p>
+                        <a href="https://a16z.com/podcast/the-worlds-she-sees-with-fei-fei-li/" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
-                <div class="card col-4">
+                <div class="card col-4" news-years="2023" news-month="11" news-day="06">
                     <img src="assets/images/Fei-Fei_Li.max-1400x800.png" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
                         <p class="card-title">Nov 6, 2023</p>
                         <p class="card-sub-title fw-bold">AI專家李飛飛：「後事實時代」AI真正的威脅是：你該怎麼判斷網路真偽？</p>
                         <p class="card-text">數位時代</p>
+                        <a href="https://www.bnext.com.tw/article/74582/fei-fei-li-how-ai-will-affect-people?" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
-                <div class="card col-4">
+                <div class="card col-4" news-years="2023" news-month="11" news-day="06">
                     <img src="assets/images/landing/news06.png" class="card-img-top" alt="">
                     <div class="card-body d-flex justify-content-between">
                         <div class="card-text-box d-inline-block">
                         <p class="card-title">Nov 6, 2023</p>
                         <p class="card-sub-title fw-bold">AI pioneer Fei-Fei Li: ‘I’m more concerned about the risks that are here and now’</p>
                         <p class="card-text">The Guardian</p>
+                        <a href="https://www.theguardian.com/technology/2023/nov/05/ai-pioneer-fei-fei-li-im-more-concerned-about-the-risks-that-are-here-and-now" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
