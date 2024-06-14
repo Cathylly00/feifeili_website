@@ -21,13 +21,13 @@ $(document).ready(function () {
 //index-01
 document.addEventListener('DOMContentLoaded', function () {
     const ele = document.getElementById('scroll-area-index');
-    ele.style.cursor = 'grab';
+    // ele.style.cursor = 'grab';
 
     let pos = { top: 0, left: 0, x: 0, y: 0 };
 
     const mouseDownHandler = function (e) {
-        ele.style.cursor = 'grabbing';
-        ele.style.userSelect = 'none';
+        // ele.style.cursor = 'grabbing';
+        // ele.style.userSelect = 'none';
 
         pos = {
             left: ele.scrollLeft,
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     const mouseUpHandler = function () {
-        ele.style.cursor = 'grab';
+        // ele.style.cursor = 'grab';
         ele.style.removeProperty('user-select');
 
         document.removeEventListener('mousemove', mouseMoveHandler);
@@ -65,13 +65,13 @@ document.addEventListener('DOMContentLoaded', function () {
 //index-02
 document.addEventListener('DOMContentLoaded', function () {
     const ele = document.getElementById('scroll-area-index-projects');
-    ele.style.cursor = 'grab';
+    // ele.style.cursor = 'grab';
 
     let pos = { top: 0, left: 0, x: 0, y: 0 };
 
     const mouseDownHandler = function (e) {
-        ele.style.cursor = 'grabbing';
-        ele.style.userSelect = 'none';
+        // ele.style.cursor = 'grabbing';
+        // ele.style.userSelect = 'none';
 
         pos = {
             left: ele.scrollLeft,
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     const mouseUpHandler = function () {
-        ele.style.cursor = 'grab';
+        // ele.style.cursor = 'grab';
         ele.style.removeProperty('user-select');
 
         document.removeEventListener('mousemove', mouseMoveHandler);
@@ -110,13 +110,13 @@ document.addEventListener('DOMContentLoaded', function () {
 //project-01
 document.addEventListener('DOMContentLoaded', function () {
     const ele = document.getElementById('scroll-area-1');
-    ele.style.cursor = 'grab';
+    // ele.style.cursor = 'grab';
 
     let pos = { top: 0, left: 0, x: 0, y: 0 };
 
     const mouseDownHandler = function (e) {
-        ele.style.cursor = 'grabbing';
-        ele.style.userSelect = 'none';
+        // ele.style.cursor = 'grabbing';
+        // ele.style.userSelect = 'none';
 
         pos = {
             left: ele.scrollLeft,
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     const mouseUpHandler = function () {
-        ele.style.cursor = 'grab';
+        // ele.style.cursor = 'grab';
         ele.style.removeProperty('user-select');
 
         document.removeEventListener('mousemove', mouseMoveHandler);
@@ -154,13 +154,13 @@ document.addEventListener('DOMContentLoaded', function () {
 //project-02
 document.addEventListener('DOMContentLoaded', function () {
     const ele = document.getElementById('scroll-area-2');
-    ele.style.cursor = 'grab';
+    // ele.style.cursor = 'grab';
 
     let pos = { top: 0, left: 0, x: 0, y: 0 };
 
     const mouseDownHandler = function (e) {
-        ele.style.cursor = 'grabbing';
-        ele.style.userSelect = 'none';
+        // ele.style.cursor = 'grabbing';
+        // ele.style.userSelect = 'none';
 
         pos = {
             left: ele.scrollLeft,
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     const mouseUpHandler = function () {
-        ele.style.cursor = 'grab';
+        // ele.style.cursor = 'grab';
         ele.style.removeProperty('user-select');
 
         document.removeEventListener('mousemove', mouseMoveHandler);
@@ -203,6 +203,9 @@ $('.dropdown li').on('click', function(){
 
 $(document).ready(function() {
     $('#show').text("Sort by: Newest");
+});
+$(document).ready(function() {
+    $('#project-show').text("Tag: All");
 });
 
 /* Sort */
